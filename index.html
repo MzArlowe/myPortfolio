@@ -12,31 +12,36 @@
 </head>
 
 <body>
+  <!-- header -->
+  <header id="header" class="header mobile-device">
+    <div class="header-inner">
+      <div class="logo">
+        <a href="Assets/Profile Picture.JPG"></a>
+      </div>
+  </header>
   <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
     <div class="container-fluid justify-content-start">
       <a class="navbar-brand" href="#">
-        <img src="Assets/Profile Picture.JPG" alt="" width="75" height="75"
-          class="d-inline-block align-text-center">
+        <img src="Assets/Profile Picture.JPG" alt="" width="75" height="75" class="d-inline-block align-text-center">
         BENJAMIN MARLOWE
       </a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
         <span class="navbar-toggler-icon"></span>
-     </button>
+      </button>
     </div>
-  <ul class="nav justify-content-end w-50">
-    <div class="collapse navbar-collapse" id="navmenu">
-      <li class="nav-item ms-auto">
-        <a class="nav-link active" aria-current="page" href="#">About Me</a>
-      </li>
-      <li class="nav-item ms-auto">
-        <a class="nav-link" href="#">My Work & Projects</a>
-      </li>
-      <li class="nav-item ms-auto">
-        <a class="nav-link" href="#">How to Contact Me</a>
-      </li>
-  </ul>
-</nav>
+    <ul class="nav justify-content-end w-50">
+      <div class="collapse navbar-collapse" id="navmenu">
+        <li class="nav-item ms-auto">
+          <a class="nav-link active" aria-current="page" href="#">About Me</a>
+        </li>
+        <li class="nav-item ms-auto">
+          <a class="nav-link" href="#">My Skills & Projects</a>
+        </li>
+        <li class="nav-item ms-auto">
+          <a class="nav-link" href="#">How to Contact Me</a>
+        </li>
+    </ul>
+  </nav>
   <div>
-    
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -54,16 +59,15 @@
             class="d-block justify-content-center w-100" alt="MzArlowe Logo">
         </div>
         <div class="carousel-item">
-          <img src="https://i.pinimg.com/originals/47/0a/19/470a19a36904fe200610cc1f41eb00d9.jpg" class="d-block justify-content-center w-100"
-            alt="Glowing Circle">
+          <img src="https://i.pinimg.com/originals/47/0a/19/470a19a36904fe200610cc1f41eb00d9.jpg"
+            class="d-block justify-content-center w-100" alt="Glowing Circle">
         </div>
         <div class="carousel-item">
-          <img src="https://newevolutiondesigns.com/images/freebies/cool-4k-wallpaper-2.jpg" class="d-block justify-content-center w-100"
-            alt="Moon Boat">
+          <img src="https://newevolutiondesigns.com/images/freebies/cool-4k-wallpaper-2.jpg"
+            class="d-block justify-content-center w-100" alt="Moon Boat">
         </div>
       </div>
-
-      <Main>
+      <div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -74,25 +78,41 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </Main>
+      </div>
+      <hr>
+      <br>
+      <hr>
+      <section id="intro" class="intro">
+        <h1>ABOUT ME</h1>
+        <h3>Who I Am</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quis provident, blanditiis, explicabo hic
+          asperiores consequuntur libero aliquam tempore perferendis neque iste illum architecto voluptate repellat
+          corrupti, vitae laudantium fugit!</p>
+        <h3>What I Want</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ullam quibusdam nam fugit nesciunt minima.
+          Sequi iure amet animi aliquid magni praesentium quis sint a doloribus, voluptates, vero, nesciunt est.</p>
+        </h1>
+      </section>
+      <h1>My Skills</h1>
       <div class="container">
         <div class="row">
           <div class="col">
-            <img
-            src="http://www.mzarlowegaming.com/resources/mzarlowe%20%281%29.png.opt720x194o0%2C0s720x194.png"
-            class="d-block justify-content-center">
+            Project1
           </div>
           <div class="col">
-            Column
+            Project2
           </div>
           <div class="col">
-            Column
+            Project3
           </div>
         </div>
       </div>
+      <div class="contact" id="contact">
+        <h1>Contact Me</h1>
+      </div>
     </div>
   </div>
-
+<footer>Footer</footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>

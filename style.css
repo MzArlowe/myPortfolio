@@ -2,6 +2,72 @@ body {
     background-color:black;
 }
 
-#d-inline-block {
+.d-inline-block {
     color: rgb(149, 149, 156) !important;
+}
+.navbar-brand {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+.nav-link {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+}
+#intro {
+    background-color: white;
+    opacity: 50%;
+    background-blend-mode: saturation;
+}
+h1 {
+    border: solid blue;
+    border-style: double;
+    margin: 10vh;
+    padding: 20px;
+    display: inline-flex;
+    text-align: center;
+    color: blue;
+}
+h3 {
+    color: orange;
+    padding: 5px, 5px, 5px;
+    margin: 20px;
+}
+p {
+    border: solid;
+    border-style: double;
+    margin: 10vh;
+    padding: 50px;
+    display: inline-flex;
+    text-align: center;
+    color: black;
+}
+.container {
+    border: solid white;
+    border-style: double;
+    margin: 10vh;
+    padding: 20px;
+    display: inline-flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.col {
+    border: solid white;
+    border-style: double;
+    margin: 10vh;
+    padding: 50px;
+    display: inline-flex;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+}
+footer {
+    margin: 10vh;
+    padding: 50px;
+    display: inline-flex;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    font-size: large;
 }
