@@ -1,67 +1,212 @@
 body {
-    background-color:black;
+    background-color: black;
 }
 
 .d-inline-block {
-    color: rgb(0, 0, 0) !important;
+    color: rgb(0, 0, 0);
 }
+
 .navbar-brand {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
 }
+
 .nav-link {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 17px;
 }
+
+#carouselExampleIndicators {
+    position: relative !important;
+}
+
+#textOverlay {
+    position: absolute !important;
+    bottom: 0px;
+    color: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: black 2px 2px;
+}
+
 #intro {
     background-color: white;
     opacity: 75%;
     background-blend-mode: saturation;
-}
-h1 {
-    border: solid blue;
-    border-style: double;
-    margin: 10vh;
-    padding: 20px;
-    display: inline-flex;
-    text-align: center;
-    color: blue;
-}
-h3 {
-    color: orange;
-    /* padding: 5px, 5px, 5px; */
-    margin: 100px;
+    margin-bottom: 10px;
 }
 
-p {
-    border: solid;
-    border-style: double;
-    margin: 10vh;
-    padding: 10px;
-    display: inline-flex;
-    text-align: center;
-    color: black;
+#img1 {
+    width: 50%;
+    height: auto;
+    align-items: center;
 }
-.container {
-    border: solid white;
-    border-style: double;
+
+h1 {
+    border-radius: 100%;
+    border: .5em solid rgb(116, 98, 98);
     margin: 10vh;
+    padding: 1em;
+    display: inline-flex;
+    text-align: center !important;
+    font-size: 20px;
+    color: rgb(93, 93, 97);
+    width: 8em;
+    height: 8em;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    color: orange;
+    /* margin: 50px; */
+    padding-top: 10px;
+    text-align: left;
+}
+
+#projects {
+    display: inline-flex;
+    flex-direction: row;
+    text-align: center;
+    /* border: solid dashed white; */
+    width: 50vw;
+}
+
+#about-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.blurbs {
+    width: 35vw;
+    display: block;
+    padding-top: 20px;
+    align-items: left;
+}
+
+.wai-blurb {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* width: 50%; */
+    font-size: 20px;
+}
+
+.wiw-blurb {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* width: 50%; */
+    font-size: 20px;
+}
+
+blockquote {
+    min-height: 5em;
+    padding: 1em 4em;
+    font: 1em/150% sans-serif;
+    position: relative;
+    background-color: lightgoldenrodyellow;
+}
+
+blockquote::before, blockquote::after {
+    position: absolute;
+    height: 3rem;
+    font: 6rem/100% Georgia, "Times New Roman", Times, serif;
+}
+
+blockquote::before {
+    content: '“';
+    top: 0.3rem;
+    left: 0.9rem;
+}
+
+blockquote::after {
+    content: '”';
+    bottom: 0.3rem;
+    right: 0.8rem;
+}
+
+blockquote i {
+    display: block;
+    font-size: 0.8em;
+    margin-top: 1rem;
+    text-style: italic;
+    text-align: right;
+}
+
+.container1 {
+    width: 50vw;
+    margin: 20px;
     padding: 20px;
-    display: inline-flex;
-    justify-content: space-around;
+    display: flex;
     text-align: center;
+    align-items: center;
 }
+
+.container2 {
+    /* margin: 20px; */
+    /* padding: 20px; */
+    display: flex;
+    text-align: right;
+    align-items: right;
+}
+
+.skills {
+    width: 35vw;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+#projects {
+    margin: 10vh;
+    padding: auto;
+    display: flex;
+    text-align: right;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    height: auto;
+    text-align: right;
+}
+
+#projects a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
 .col {
     border: solid white;
-    border-style: double;
-    margin: 10vh;
-    padding: 50px;
-    display: inline-flex;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#creature, #ghibli, #nasa, #blue-badge, #red-badge {
+    max-width: 50%;
+    height: auto;
     justify-content: space-evenly;
-    text-align: center;
-    color: white;
+}
+
+#kast {
+    max-width: 100%;
+    height: auto;
+}
+
+#creature {
+    width: 50%;
+    height: auto;
 }
 
 .contact {
@@ -69,16 +214,37 @@ p {
     opacity: 75%;
 }
 
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+}
+
+#container-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+#social-icons {
+    width: 100vw;
+    /* margin: 20px; */
+    /* padding: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 form {
     padding: 50px;
+    /* width: 50vw; */
 }
 
 footer {
-    margin: 10vh;
+    /* margin: 10vh;
     padding: 50px;
     display: inline-flex;
     justify-content: space-around;
     text-align: center;
     color: white;
-    font-size: 25px;
+    font-size: 25px; */
 }
