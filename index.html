@@ -24,10 +24,10 @@
   </header>
   <nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
     <div class="container-fluid justify-content-start">
-      <a class="navbar-brand" href="#">
-        <img src="Assets/mzarlowe_logo_notext.png" alt="" width="50" height="45"
-          class="d-inline-block align-text-center">
-        BENJAMIN MARLOWE
+      <a class="navbar-brand" style="padding-left: 15px">
+        <img src="Assets/mzarlowe_logo_notext.png" alt="MzArlowe Logo" width="50" height="45"
+          class="d-inline-block align-text-center padding-right:15px"><span style="font-size:30px;">
+        BENJAMIN MARLOWE</span><span style="font-size:20px;"> - Full-Stack Web Developer</span>
       </a><button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -54,21 +54,39 @@
         aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
         aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 3"></button>
     </div>
 
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img
-          src="https://cutewallpaper.org/21/4k-wallpaper-video-games/Mass-Effect-Andromeda-2017-Video-Game-4k-Hd-Desktop-Hd-.jpg"
-          class="d-block justify-content-center w-100" alt="MzArlowe Logo">
+          src="Assets/I8That_FrontPage.PNG"
+          class="d-block justify-content-center w-100" alt="I8That Front Page">
+          <div>
+            <h6 id="textOverlay">Food-Log using React.js</h6>
+          </div>
       </div>
       <div class="carousel-item">
-        <img src="https://i.pinimg.com/originals/47/0a/19/470a19a36904fe200610cc1f41eb00d9.jpg"
+        <img src="Assets/Kast Recreation.PNG"
           class="d-block justify-content-center w-100" alt="Glowing Circle">
+          <div>
+            <h6 id="textOverlay">Web Page Recreation</h6>
+          </div>
       </div>
       <div class="carousel-item">
-        <img src="http://www.hdwallpaperslife.com/wp-content/uploads/2020/04/astronaut_in_space_4k_4.jpg"
+        <img src="Assets/NPOTD.PNG"
           class="d-block justify-content-center w-100" alt="Astronaut">
+          <div>
+            <h6 id="textOverlay">API Manipulation</h6>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Assets/NPOTD.PNG"
+          class="d-block justify-content-center w-100" alt="Astronaut">
+          <div>
+            <h6 id="textOverlay">To Be Updated</h6>
+          </div>
       </div>
     </div>
     <div>
@@ -82,9 +100,12 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+      <div>
+        <h6 id="textOverlay"></h6>
+      </div>
     </div>
     <div>
-      <h6 id="textOverlay">Jr. FullStack Developer</h6>
+      <h6 id="textOverlay"></h6>
     </div>
   </div>
   <hr>
@@ -121,17 +142,30 @@
     </div>
     <div class="row row-cols-3" id="projects">
       <div class="col">
+        <!--Porfolio Modal Attempt-->
         <a href="https://codepen.io/MzArlowe/pen/JjNgyRd">CSS Creature
-          <img src="Assets/Creature_Ghost.PNG" id="creature">
-        </a>
+          <img src="Assets/Creature_Ghost.PNG" id="creature"></a>
+          <!-- <div class="project-1-modal">
+            <div class="portfolio-header">
+            <div class="project-1-title">
+              <h2 class="portfolio-title">CSS Creature</h2>
+              <p class="portfolio-subtitle">Subtitle goes here</p>
+            </div>
+          </div> <!--close portfolio header-->
+          <!-- <div class="portfolio-modal">
+            
+            <p>ipsom Lorem itaque?</p>
+            <img src="">
+          </div>
+          </div> -->
       </div>
       <div class="col">
-        <a href="https://github.com/MzArlowe/StaticPage.git">Static Page
+        <a href="Assets/Kast Recreation.PNG">Static Page
           <img src="Assets/KAST-logo2.svg" width="50%" height="50%" id="kast">
         </a>
       </div>
       <div class="col">
-        <a href="https://mzarlowe.github.io/apiProject-1/">Ghibli API
+        <a href="https://mzarlowe.github.io/apiProject-1/">Ghibli API 1
           <img src="https://pa1.narvii.com/7907/cd8c4e436eff644a635c25350e6ba88799112398r1-500-509_hq.gif" id="ghibli">
         </a>
       </div>
@@ -140,7 +174,9 @@
           <img src="https://media1.giphy.com/media/l3978y5HqiEtqupiM/200.gif" width="50%" height="50%" id="nasa">
         </a>
       </div>
-      <div class="col"><a href="#">Upcoming<img src="Assets/badges-webdev_blue.png" id="blue-badge"></a>
+      <div class="col">
+        <a href="https://rab-client-i-8-that.herokuapp.com/">I8That Food Log
+          <img src="Assets/I8That_Logo_FinalSVGA2.png" id="blue-badge"></a>
       </div>
       <div class="col">
         <a href="#">Upcoming<img src="Assets/badges-webdev_red.png" id="red-badge"></a>
@@ -162,7 +198,7 @@
         </div>
       </div>
     </div>
-
+<!-- /*contact form code */ -->
     <div id="contact_form"></div>
     <form class="row g-3" action="https://formspree.io/f/xayakpbg" method="POST" enctype="multipart/form-data">
       <div class="col-md-6">
@@ -187,7 +223,7 @@
           Your file, Job Description, Document, etc.:
           <input type="file" name="upload">
         </label>
-        <button type="submit">CONNECT!</button>
+        <button type="submit" style="border-radius: 10px">LETS CONNECT!</button>
     </form>
   </div>
   </div>
@@ -198,7 +234,7 @@
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         © 2021 Copyright:
-        <a class="text-dark">Benjamin Marlowe <img src="Assets/mzarlowe_logo_notext.png" width="3%" height="3%"></a>
+        <a class="text-dark"> Benjamin Marlowe<img src="Assets/mzarlowe_logo_notext.png" width="3%" height="3%"></a>
       </div>
       <!-- Copyright -->
     </footer>

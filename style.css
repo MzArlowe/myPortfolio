@@ -2,15 +2,15 @@ body {
     background-color: black;
 }
 
-.d-inline-block {
-    color: rgb(0, 0, 0);
-}
-
 .navbar-brand {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
 }
+/* 
+.d-inline-block, #title-tag {
+    flex-direction: row;
+} */
 
 .nav-link {
     color: white;
@@ -25,7 +25,7 @@ body {
 #textOverlay {
     position: absolute !important;
     bottom: 0px;
-    color: white !important;
+    color: grey !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,8 +38,8 @@ body {
 
 #intro {
     background-color: white;
-    opacity: 75%;
-    background-blend-mode: saturation;
+    /* opacity: 75%; */
+    /* background-blend-mode: saturation; */
     margin-bottom: 10px;
 }
 
@@ -113,6 +113,7 @@ blockquote {
     font: 1em/150% sans-serif;
     position: relative;
     background-color: lightgoldenrodyellow;
+    box-shadow: 10px 5px 5px lightblue;
 }
 
 blockquote::before, blockquote::after {
@@ -148,6 +149,7 @@ blockquote i {
     display: flex;
     text-align: center;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .container2 {
@@ -156,6 +158,7 @@ blockquote i {
     display: flex;
     text-align: right;
     align-items: right;
+    justify-content: space-evenly;
 }
 
 .skills {
@@ -211,7 +214,7 @@ blockquote i {
 
 .contact {
     background: white;
-    opacity: 75%;
+    /* opacity: 75%; */
 }
 
 .contact-container {
@@ -223,6 +226,7 @@ blockquote i {
 #container-icons {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 #social-icons {
@@ -231,12 +235,13 @@ blockquote i {
     /* padding: 20px; */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 form {
-    padding: 50px;
-    /* width: 50vw; */
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 50px;
 }
 
 footer {
@@ -248,3 +253,24 @@ footer {
     color: white;
     font-size: 25px; */
 }
+/* 
+.portfolio-modal {
+    position: relative;
+    z-index: 10;
+    top: 10em;
+    bottom: 10em;
+    left: 10em;
+    right: 10em;
+    background-color: white;
+    opacity: 25%%;
+    box-shadow: 0 0 0 5em rgba(black, .5)
+}
+
+.portfolio-header {
+    text-align: left;
+    padding: 5em 0
+}
+
+.portfolio-header:nth-of-type(1) {
+    background-image: url(../CSSCreature/index.html);
+} */
