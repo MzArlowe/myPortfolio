@@ -138,7 +138,7 @@ blockquote i {
     display: block;
     font-size: 0.8em;
     margin-top: 1rem;
-    text-style: italic;
+    font-style: italic;
     text-align: right;
 }
 
@@ -153,21 +153,23 @@ blockquote i {
 }
 
 .container2 {
-    /* margin: 20px; */
-    /* padding: 20px; */
     display: flex;
     text-align: right;
     align-items: right;
     justify-content: space-evenly;
 }
 
-.skills {
-    width: 35vw;
-    margin: 10px;
-    padding: 10px;
+.col {
+    border: solid white;
+    border-radius: 25%;
+    background-color: white;
     display: flex;
-    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    width: 25vw;
+    height: auto;
+    margin: auto;
 }
 
 #projects {
@@ -187,19 +189,14 @@ blockquote i {
     font-size: 20px;
 }
 
-.col {
-    border: solid white;
-    border-radius: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 #creature, #ghibli, #nasa, #blue-badge, #red-badge {
     max-width: 50%;
     height: auto;
     justify-content: space-evenly;
+}
+
+#ghibli, #nasa {
+    border-radius: 50%
 }
 
 #kast {
@@ -244,7 +241,7 @@ form {
     padding-bottom: 50px;
 }
 
-footer {
+/* footer { */
     /* margin: 10vh;
     padding: 50px;
     display: inline-flex;
@@ -252,7 +249,7 @@ footer {
     text-align: center;
     color: white;
     font-size: 25px; */
-}
+/*  */
 /* 
 .portfolio-modal {
     position: relative;
